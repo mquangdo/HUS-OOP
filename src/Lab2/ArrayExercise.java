@@ -9,7 +9,7 @@ public class ArrayExercise {
     public static void main(String[] args) {
         int[] arr = createArray();
         printArray(arr);
-        int[] studentGrades = generateStudentGrade();
+        int[] studentGrades = generateStudentGrade(in);
         simpleGradesStatistics(studentGrades);
         testHexadecimalToBinary();
         testDecimalToHexadecimal();
@@ -40,7 +40,7 @@ public class ArrayExercise {
     }
 
     //2.2
-    public static int[] generateStudentGrade() {
+    public static int[] generateStudentGrade(Scanner in) {
         System.out.print("Enter  the number of students: ");
 
         int numStudent = in.nextInt();

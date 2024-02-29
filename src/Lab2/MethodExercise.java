@@ -18,7 +18,7 @@ public class MethodExercise {
         testEquals(arr1, arr2);
         testCopyOf(arr1);
         testSwap(arr1, arr2);
-        testSwap(arr1, arr2);
+        testReverse(arr1);
     }
 
     //3.1
@@ -99,6 +99,7 @@ public class MethodExercise {
         print(arr);
     }
 
+    
     public static void print(double[] arr){
         System.out.print('[');
         for(int i = 0; i < arr.length; i++){
@@ -227,10 +228,27 @@ public class MethodExercise {
 
     public static void testCopyOf(int[] arr){
         int[] copiedArray = copyOf(arr);
-        System.out.print("The copy array is: ");
-        print(arr);
+        int[] copiedArray2 = copyOf(arr, arr.length - 1);
+        System.out.print("The copy array is (1 argument): ");
+        print(copiedArray);
+        System.out.println("The copy array is (2 arguments): ");
+        print(copiedArray2);
     }
 
+    public static int[] copyOf(int[] arr, int newLength) {
+        int[] result = new int[newLength];
+        if (newLength > arr.length) {
+            for (int i = 0; i < newLength; i++) {
+                result[i] = arr[i];
+            }
+            return result;
+        } else {
+            for (int i = 0; i < newLength; i++) {
+                result[i] = arr[i];
+            }
+            return result;
+        }
+    }
     //3.9
     public static boolean swap(int[] arr1, int[] arr2){
         if (arr1.length != arr2.length){
