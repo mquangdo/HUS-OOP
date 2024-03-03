@@ -63,9 +63,7 @@ public class DecisionAndLoopsHomework {
         boolean[] checkChar = new boolean[guessedString.length()];
         boolean[] allTrue = new boolean[guessedString.length()];
 
-        for (int i = 0; i < allTrue.length; i++) {
-            allTrue[i] = true;
-        }
+        Arrays.fill(allTrue,true);
 
         System.out.println("Key in one character or your guess word: ");
 

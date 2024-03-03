@@ -7,10 +7,10 @@ public class MathLibraryHomework {
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        testTrigonometric();
-        testSpecialSeries();
-        factorialInt();
-        fibonacciInt();
+//        testTrigonometric();
+//        testSpecialSeries();
+//        factorialInt();
+//        fibonacciInt();
         fibonacciInt();
 
     }

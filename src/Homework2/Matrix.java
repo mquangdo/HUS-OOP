@@ -4,13 +4,7 @@ import com.sun.source.tree.BreakTree;
 
 public class Matrix {
     public static void main(String[] args) {
-        int[][] matrixA = {{1,2,3},{4,5,6},{7,8,9}};
-        int[][] matrixB = {{2,3,2},{5,5,6},{1,1,1}};
-        int[][] matrixD = add(matrixA, matrixB);
-        int[][] matrixC = multipyly(matrixA, matrixB);
-        print(matrixC);
-        System.out.println();
-        print(matrixD);
+        testOperation();
     }
 
     public static void print(int[][] matrix){
@@ -51,42 +45,53 @@ public class Matrix {
 
     public static int[][] add(int[][] matrix1, int[][] matrix2){
         int[][] result = new int[matrix1.length][matrix1[0].length];
-        for (int row = 0; row < matrix1.length; row++){
-            for (int col = 0; col < matrix1[0].length; col++){
-                result[row][col] = matrix1[row][col] + matrix2[row][col];
+        if(haveSameDimension(matrix1, matrix2)){
+            for (int row = 0; row < matrix1.length; row++){
+                for (int col = 0; col < matrix1[0].length; col++){
+                    result[row][col] = matrix1[row][col] + matrix2[row][col];
+                }
             }
+            return result;
         }
-        return result;
+        return new int[][]{};
     }
 
     public static double[][] add(double[][] matrix1, double[][] matrix2){
         double[][] result = new double[matrix1.length][matrix1[0].length];
-        for (int row = 0; row < matrix1.length; row++){
-            for (int col = 0; col < matrix1[0].length; col++){
-                result[row][col] = matrix1[row][col] + matrix2[row][col];
+        if (haveSameDimension(matrix1, matrix2)){
+            for (int row = 0; row < matrix1.length; row++){
+                for (int col = 0; col < matrix1[0].length; col++){
+                    result[row][col] = matrix1[row][col] + matrix2[row][col];
+                }
             }
+            return result;
         }
-        return result;
+        return new double[][]{};
     }
 
-    public static int[][] subtract(int[][] matrix1, int[][] matrix2){
+    public static int[][] subtract(int[][] matrix1, int[][] matrix2) {
         int[][] result = new int[matrix1.length][matrix1[0].length];
-        for (int row = 0; row < matrix1.length; row++){
-            for (int col = 0; col < matrix1[0].length; col++){
-                result[row][col] = matrix1[row][col] - matrix2[row][col];
+        if (haveSameDimension(matrix1, matrix2)) {
+            for (int row = 0; row < matrix1.length; row++) {
+                for (int col = 0; col < matrix1[0].length; col++) {
+                    result[row][col] = matrix1[row][col] - matrix2[row][col];
+                }
             }
+            return result;
         }
-        return result;
+        return new int[][]{};
     }
-
     public static double[][] subtract(double[][] matrix1, double[][] matrix2){
         double[][] result = new double[matrix1.length][matrix1[0].length];
-        for (int row = 0; row < matrix1.length; row++){
-            for (int col = 0; col < matrix1[0].length; col++){
-                result[row][col] = matrix1[row][col] - matrix2[row][col];
+        if (haveSameDimension(matrix1, matrix2)){
+            for (int row = 0; row < matrix1.length; row++){
+                for (int col = 0; col < matrix1[0].length; col++){
+                    result[row][col] = matrix1[row][col] - matrix2[row][col];
+                }
             }
+            return result;
         }
-        return result;
+        return new double[][]{};
     }
 
     public static int[][] multipyly(int[][] matrix1, int[][] matrix2){
@@ -117,4 +122,31 @@ public class Matrix {
         return res;
     }
 
+    public static void testOperation(){
+        int[][] matrixA = {{1,2,3},{1,2,3},{1,1,1}};
+        int[][] matrixB = {{1,1,1},{2,2,2},{3,3,3}};
+        int[][] matrixC = {{1,2,3}};
+
+        if (haveSameDimension(matrixA, matrixB)){
+            System.out.println("Matrix A and matrix B have the same dimension");
+        }
+
+        if (!haveSameDimension(matrixA, matrixC)){
+            System.out.println("Matrix A and matrix B dont have the same dimension");
+        }
+
+        System.out.println("Matrix A: ");
+        print(matrixA);
+        System.out.println("Matrix B: ");
+        print(matrixB);
+        System.out.println("Matrix C: ");
+        print(matrixC);
+
+        System.out.println("The sum of A and B is: ");
+        print(add(matrixA,matrixB));
+        System.out.println("The substraction of A and B is: ");
+        print(subtract(matrixA, matrixB));
+        System.out.println("The multiplication of C and A is: ");
+        print(multipyly(matrixC, matrixA));
+    }
 }

@@ -3,12 +3,12 @@ package Homework2;
 import java.util.Scanner;
 
 public class StringAndCharacterHomework {
-
     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
-        testChangeCipher();
-        testPalindromic();
+//        testChangeCipher();
+//        testPalindromic();
+        System.out.println((int)'D');
     }
 
     public static String changeCipher(String inStr){
@@ -47,4 +47,19 @@ public class StringAndCharacterHomework {
             System.out.println("Not palindromic!");
         }
     }
+
+    public boolean binarySearch(int[] array, int key, int fromIdx, int toIdx){
+        int firstIdx = fromIdx;
+        int lastIdx = toIdx;
+        int middleIdx = (fromIdx + toIdx) / 2;
+        if (key == array[middleIdx]){
+            return true;
+        } else if (key < array[middleIdx]) {
+            firstIdx = middleIdx;
+        } else if (key > array[middleIdx]){
+            lastIdx = middleIdx;
+        }
+        return binarySearch(array, key, firstIdx, lastIdx);
+    }
+
 }

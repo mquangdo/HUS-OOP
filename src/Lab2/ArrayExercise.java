@@ -7,11 +7,12 @@ public class ArrayExercise {
     static Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int[] arr = createArray();
-        printArray(arr);
-        int[] studentGrades = generateStudentGrade(in);
-        simpleGradesStatistics(studentGrades);
-        testHexadecimalToBinary();
+//        int[] arr = createArray();
+//        printArray(arr);
+//        System.out.println();
+//        int[] studentGrades = generateStudentGrade(in);
+//        simpleGradesStatistics(studentGrades);
+//        testHexadecimalToBinary();
         testDecimalToHexadecimal();
 
     }
@@ -104,7 +105,7 @@ public class ArrayExercise {
 
     //2.4
     public static String decimalToHexadecimal(int positiveInteger){
-        String hexChars = "0123456789ABCDEF";
+        final String hexChars = "0123456789ABCDEF";
         String hex = "";
         while (positiveInteger > 0) {
             hex = hexChars.charAt(positiveInteger % 16) + hex;
