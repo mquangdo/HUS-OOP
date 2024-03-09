@@ -8,7 +8,6 @@ public class ArrayHomework {
     public static void main(String[] args) {
 
         printArrayInStars(in);
-
     }
 
 
