@@ -497,6 +497,7 @@ class MyComplex {
 
 class MyPolynomial {
 
+
     private double[] coeffs;
 
     public MyPolynomial(double... coeff) {
@@ -506,7 +507,7 @@ class MyPolynomial {
     }
 
     public static void main(String[] args) {
-        MyPolynomial poly = new MyPolynomial(1.1, 1.5, 2.5, 3.6);
+        MyPolynomial poly = new MyPolynomial(1, 2, 2.5,0);
         System.out.println(Arrays.toString(poly.coeffs));
         System.out.println(poly);
         System.out.println(poly.evaluate(1));
@@ -539,9 +540,19 @@ class MyPolynomial {
     public String toString() {
         String res = "";
         for (int i = 0; i < this.coeffs.length; i++) {
-            res = " " + this.coeffs[i] + "x^" + i + " +" + res;
+            if (this.coeffs[i] != 0){
+                if (i == 1){
+                    res = " + " + this.coeffs[i] + "x" + res;
+                } else if (i == 0){
+                    res = " + " + this.coeffs[i] + res;
+                } else if (i == this.coeffs.length - 1){
+                    res =  this.coeffs[i] + "x^" + i + res;
+                } else {
+                    res = " + " + this.coeffs[i] + "x^" + i + res;
+                }
+            }
         }
-        return res.substring(0, res.length() - 1).trim();
+        return res.trim();
     }
 
     public double evaluate(double x) {
@@ -553,12 +564,19 @@ class MyPolynomial {
     }
 
     public MyPolynomial add(MyPolynomial right) {
-        int maxLength = Math.max(this.coeffs.length, right.getCoeffs().length);
-        int minLength = Math.min(this.coeffs.length, right.getCoeffs().length);
-        double[] newCoeffs = new double[maxLength];
-        for (int i = 0; i < maxLength; i++) {
-            newCoeffs[i] = this.coeffs[i] + right.getCoeffs()[i];
+        int maxlength = Math.max(this.coeffs.length, right.coeffs.length);
+        double [] newThisCoef = new double[maxlength];
+        double [] newRigthCoef = new double[maxlength];
+        for (int i = 0; i < this.coeffs.length; i++){
+            newThisCoef[i] = this.coeffs[i];
         }
+        for (int i = 0; i < right.coeffs.length; i++){
+            newRigthCoef[i] = right.coeffs[i];
+        }
+        for (int i = 0; i < newThisCoef.length; i++){
+            newThisCoef[i] += newRigthCoef[i];
+        }
+        this.coeffs = newThisCoef;
         return this;
     }
 
