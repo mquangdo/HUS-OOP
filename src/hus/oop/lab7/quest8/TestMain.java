@@ -19,5 +19,7 @@ public class TestMain {
         m3.moveUp();
         m3.moveUp();
         System.out.println(m3);
+
+
     }
 }

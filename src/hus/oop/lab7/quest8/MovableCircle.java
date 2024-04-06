@@ -31,4 +31,9 @@ public class MovableCircle implements Movable {
     public String toString(){
         return center.toString() + ",radius = " + this.radius;
     }
+
+    public double getRadius(){
+        return this.radius;
+    }
+
 }
