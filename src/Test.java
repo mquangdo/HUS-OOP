@@ -12,5 +12,31 @@ public class Test {
             System.out.println(sc.next());
         }
     }
+}
 
+class Circle{
+    private final String kumden = "ngu";
+    private double radius;
+    private String color;
+
+    public Circle(double radius, String color){
+        this.radius = radius;
+        this.color = color;
+    }
+
+    public double getRadius(){
+        return this.radius;
+    }
+
+    public String getColor(){
+        return this.color;
+    }
+
+    public double getArea(){
+        return Math.PI * this.radius * this.radius;
+    }
+
+    public String toString(){
+        return "Circle[radius=" + this.radius + ",color=" + this.color + "]";
+    }
 }
