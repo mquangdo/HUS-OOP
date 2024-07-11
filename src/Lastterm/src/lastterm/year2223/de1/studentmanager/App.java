@@ -1,0 +1,267 @@
+package lastterm.year2223.de1.studentmanager;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
+public class App {
+    private static final String COMMA_DELIMITER = ",";
+
+    public static void readListData(String filePath) {
+        BufferedReader dataReader = null;
+        try {
+            String line;
+            dataReader = new BufferedReader(new FileReader(filePath));
+
+            // Read file line by line?
+            while ((line = dataReader.readLine()) != null) {
+                List<String> dataList = parseDataLineToList(line);
+                if (dataList.size() != 7) {
+                    continue;
+                }
+
+                if (dataList.get(0).equals("id")) {
+                    continue;
+                }
+                Student student = new Student.StudentBuilder(dataList.get(0))
+                        .withLastname(dataList.get(1))
+                        .withFirstname(dataList.get(2))
+                        .withYearOfBirth(Integer.parseInt(dataList.get(3)))
+                        .withMathsGrade(Double.parseDouble(dataList.get(4)))
+                        .withPhysicsGrade(Double.parseDouble(dataList.get(5)))
+                        .withChemistryGrade(Double.parseDouble(dataList.get(6)))
+                        .build();
+
+                StudentManager.getInstance().append(student);
+
+                /*
+                TODO
+
+                Đọc được dữ liệu, tạo ra các đối tượng sinh viên ở đây, và cho vào StudentManager để quản lý.
+                */
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (dataReader != null)
+                    dataReader.close();
+            } catch (IOException crunchifyException) {
+                crunchifyException.printStackTrace();
+            }
+        }
+    }
+
+    public static List<String> parseDataLineToList(String dataLine) {
+        List<String> result = new ArrayList<>();
+        if (dataLine != null) {
+            String[] splitData = dataLine.split(COMMA_DELIMITER);
+            for (int i = 0; i < splitData.length; i++) {
+                result.add(splitData[i]);
+            }
+        }
+        return result;
+    }
+
+    public static String[] parseDataLineToArray(String dataLine) {
+        if (dataLine == null) {
+            return null;
+        }
+
+        return dataLine.split(COMMA_DELIMITER);
+    }
+
+    public static void main(String[] args) {
+        testOriginalData();
+        testSortYearOfBirthIncreasing();
+        testSortYearOfBirthDecreasing();
+        testSortMathsGradeIncreasing();
+        testSortMathsGradeDecreasing();
+        testSortPhysicsGradeIncreasing();
+        testSortPhysicsGradeDecreasing();
+        testSortChemistryGradeIncreasing();
+        testSortChemistryGradeDecreasing();
+        testFilterStudentsHighestMathsGrade();
+        testFilterStudentsLowestMathsGrade();
+        testFilterStudentsHighestPhysicsGrade();
+        testFilterStudentsLowestPhysicsGrade();
+        testFilterStudentsHighestChemistryGrade();
+        testFilterStudentsLowestChemistryGrade();
+        testFilterStudentsHighestAverageGrade();
+        testFilterStudentsLowestAverageGrade();
+    }
+
+    public static void init() {
+        String filePath = "src/lastterm/year2223/de1/data/students.csv";
+        readListData(filePath);
+    }
+
+    public static void testOriginalData() {
+        init();
+        String studentIds = StudentManager.getInstance().idOfStudentsToString(StudentManager.getInstance().getStudentList());
+        System.out.print(studentIds);
+    }
+
+    public static void testSortYearOfBirthIncreasing() {
+        System.out.println("\ntestSortYearOfBirthIncreasing:");
+        List<Student> students = StudentManager.getInstance().sortYearOfBirthIncreasing();
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(students);
+        System.out.print(studentIdsString);
+        System.out.println();
+    }
+
+    public static void testSortYearOfBirthDecreasing() {
+        System.out.println("\ntestSortYearOfBirthDecreasing:");
+        List<Student> students = StudentManager.getInstance().sortYearOfBirthDecreasing();
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(students);
+        System.out.print(studentIdsString);
+    }
+
+    public static void testSortMathsGradeIncreasing() {
+        /* TODO */
+        System.out.println("\ntestSortMathsGradeIncreasing:");
+        StudentManager.print(StudentManager.getInstance().sortMathsGradeIncreasing());
+        System.out.println();
+    }
+
+    public static void testSortMathsGradeDecreasing() {
+        /* TODO */
+        System.out.println("\ntestSortMathsGradeDecreasing:");
+        StudentManager.print(StudentManager.getInstance().sortMathsGradeDecreasing());
+        System.out.println();
+    }
+
+    public static void testSortPhysicsGradeIncreasing() {
+        /* TODO */
+        System.out.println("\ntestSortPhysicsGradeIncreasing:");
+        StudentManager.print(StudentManager.getInstance().sortPhysicsGradeIncreasing());
+        System.out.println();
+    }
+
+    public static void testSortPhysicsGradeDecreasing() {
+        /* TODO */
+        System.out.println("\ntestSortPhysicsGradeDecreasing:");
+        StudentManager.print(StudentManager.getInstance().sortPhysicsGradeDecreasing());
+        System.out.println();
+    }
+
+    public static void testSortChemistryGradeIncreasing() {
+        /* TODO */
+        System.out.println("\ntestSortPhysicsGradeIncreasing:");
+        StudentManager.print(StudentManager.getInstance().sortChemistryGradeIncreasing());
+        System.out.println();
+    }
+
+    public static void testSortChemistryGradeDecreasing() {
+        /* TODO */
+        System.out.println("\ntestSortChemistryGradeDecreasing:");
+        StudentManager.print(StudentManager.getInstance().sortChemistryGradeDecreasing());
+        System.out.println();
+    }
+
+    public static void testFilterStudentsHighestMathsGrade() {
+        System.out.println("\ntestFilterStudentsHighestMathsGrade:");
+        List<Student> students = StudentManager.getInstance().sortMathsGradeDecreasing();
+        List<Student> nHighestMathsGradeStudents = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            nHighestMathsGradeStudents.add(students.get(i));
+        }
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(nHighestMathsGradeStudents);
+        System.out.print(studentIdsString);
+        System.out.println();
+    }
+
+    public static void testFilterStudentsLowestMathsGrade() {
+        System.out.println("\ntestFilterStudentsLowestMathsGrade:");
+        List<Student> students = StudentManager.getInstance().sortMathsGradeIncreasing();
+        List<Student> nLowestMathsGradeStudents = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            nLowestMathsGradeStudents.add(students.get(i));
+        }
+
+        String codeString = StudentManager.getInstance().idOfStudentsToString(nLowestMathsGradeStudents);
+        System.out.print(codeString);
+        System.out.println();
+    }
+
+    public static void testFilterStudentsHighestPhysicsGrade() {
+        /* TODO */
+        System.out.println("\ntestFilterStudentsHighestPhysicsGrade:");
+        List<Student> students = StudentManager.getInstance().sortPhysicsGradeDecreasing();
+        List<Student> nHighestPhysicsGradeStudents = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            nHighestPhysicsGradeStudents.add(students.get(i));
+        }
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(nHighestPhysicsGradeStudents);
+        System.out.print(studentIdsString);
+        System.out.println();
+    }
+
+    public static void testFilterStudentsLowestPhysicsGrade() {
+        /* TODO */
+        System.out.println("\ntestFilterStudentsLowestPhysicsGrade:");
+        List<Student> students = StudentManager.getInstance().sortPhysicsGradeIncreasing();
+        List<Student> nLowesePhysicsGradeStudents = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            nLowesePhysicsGradeStudents.add(students.get(i));
+        }
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(nLowesePhysicsGradeStudents);
+        System.out.print(studentIdsString);
+        System.out.println();
+    }
+
+    public static void testFilterStudentsHighestChemistryGrade() {
+        /* TODO */
+        System.out.println("\ntestFilterStudentsHighestChemistryGrade:");
+        List<Student> students = StudentManager.getInstance().sortChemistryGradeDecreasing();
+        List<Student> nHighestChemistryGradeStudents = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            nHighestChemistryGradeStudents.add(students.get(i));
+        }
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(nHighestChemistryGradeStudents);
+        System.out.print(studentIdsString);
+        System.out.println();
+    }
+
+    public static void testFilterStudentsLowestChemistryGrade() {
+        /* TODO */
+        System.out.println("\ntestFilterStudentsLowestChemistryGrade:");
+        List<Student> students = StudentManager.getInstance().sortChemistryGradeIncreasing();
+        List<Student> nLowestChemistryGradeStudents = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            nLowestChemistryGradeStudents.add(students.get(i));
+        }
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(nLowestChemistryGradeStudents);
+        System.out.print(studentIdsString);
+        System.out.println();
+    }
+
+    public static void testFilterStudentsHighestAverageGrade() {
+        /* TODO */
+        System.out.println("\ntestFilterStudentsHighestAverageGrade:");
+        List<Student> students = StudentManager.getInstance().sortAverageGradeDecreasing();
+        List<Student> nHighestAverageGradeStudents = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            nHighestAverageGradeStudents.add(students.get(i));
+        }
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(nHighestAverageGradeStudents);
+        System.out.print(studentIdsString);
+        System.out.println();
+    }
+
+    public static void testFilterStudentsLowestAverageGrade() {
+        /* TODO */
+        System.out.println("\ntestFilterStudentsLowestAverageGrade:");
+        List<Student> students = StudentManager.getInstance().sortAverageGradeIncreasing();
+        List<Student> nLowestAverageGradeStudents = new LinkedList<>();
+        for (int i = 0; i < 5; i++) {
+            nLowestAverageGradeStudents.add(students.get(i));
+        }
+        String studentIdsString = StudentManager.getInstance().idOfStudentsToString(nLowestAverageGradeStudents);
+        System.out.print(studentIdsString);
+        System.out.println();
+    }
+}

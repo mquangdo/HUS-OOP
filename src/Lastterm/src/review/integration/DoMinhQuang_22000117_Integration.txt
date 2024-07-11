@@ -1,0 +1,53 @@
+ARRAY POLYNOMIAL:
+
+First poly:
+[4.0 + 5.0x + 6.0x^2 + 2.0x^3]
+
+Second poly:
+[1.0 + 2.0x + 3.0x^2]
+
+Add 2 polys:
+[5.0 + 7.0x + 9.0x^2 + 2.0x^3]
+
+Minus 2 polys:
+[4.0 + 5.0x + 6.0x^2 + 2.0x^3]
+
+Multiply 2 polys:
+[4.0 + 13.0x + 28.0x^2 + 29.0x^3 + 22.0x^4 + 6.0x^5]
+
+Value of first poly with x = 2:
+918.0
+
+Value of second poly with x = 2:
+17.0
+
+
+LIST POLYNOMIAL:
+
+First poly:
+[4.0 + 5.0x + 6.0x^2 + 2.0x^3]
+
+Second poly:
+[1.0 + 2.0x + 3.0x^2]
+
+Add 2 polys:
+[5.0 + 7.0x + 9.0x^2 + 2.0x^3]
+
+Minus 2 polys:
+[4.0 + 5.0x + 6.0x^2 + 2.0x^3]
+
+Multiply 2 polys:
+[4.0 + 13.0x + 28.0x^2 + 29.0x^3 + 22.0x^4 + 6.0x^5]
+
+Value of first poly with x = 2:
+918.0
+
+Value of second poly with x = 2:
+17.0
+
+
+Polynomial:
+[1.0 + 2.0x + 3.0x^2]
+SimpsonRule: 69.99999999999979
+MidpointRule: 69.99999999500005
+TrapezoidRule: 70.00000003999999

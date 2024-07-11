@@ -1,0 +1,98 @@
+Test ArrayPolynomial:
+
+Poly1:
+[1.5 - 1.4x + 2.6x^2 + 3.6x^3 + 3.7x^4 + 5.6x^5 + 2.5x^6 + 1.5x^7]
+
+Value at x = 5:
+176572.0
+
+Set coefficient at index 1 from 2.6 to 3.9
+[1.5 + 3.9x + 2.6x^2 + 3.6x^3 + 3.7x^4 + 5.6x^5 + 2.5x^6 + 1.5x^7]
+
+Remove coefficient at index 3:
+[1.5 + 3.9x + 2.6x^2 + 3.7x^3 + 5.6x^4 + 2.5x^5 + 1.5x^6]
+
+Derivative:
+[3.9 + 5.2x + 11.100000000000001x^2 + 22.4x^3 + 12.5x^4 + 9.0x^5]
+
+Poly2:
+[1.5 + 2.6x + 3.7x^2 + 4.5x^3]
+
+Value at x = 3:
+164.1
+
+Set coefficient at index 2 from 3.7 to 3.9
+[1.5 + 2.6x + 3.9x^2 + 4.5x^3]
+
+Remove coefficient at index 1:
+[1.5 + 3.9x + 4.5x^2 + 4.5x^3]
+
+Derivative:
+[3.9 + 9.0x + 13.5x^2]
+
+Multiply:
+[2.25 + 11.7x + 25.86x^2 + 39.989999999999995x^3 + 52.08x^4 + 53.94x^5 + 53.85x^6 + 42.300000000000004x^7 + 18.0x^8 + 6.75x^9]
+
+Sum:
+[3.75 + 15.6x + 30.36x^2 + 44.489999999999995x^3 + 52.08x^4 + 53.94x^5 + 53.85x^6 + 42.300000000000004x^7 + 18.0x^8 + 6.75x^9]
+
+Minus:
+[2.25 + 11.7x + 25.86x^2 + 39.989999999999995x^3 + 52.08x^4 + 53.94x^5 + 53.85x^6 + 42.300000000000004x^7 + 18.0x^8 + 6.75x^9]
+
+
+Test ListPolynomial:
+
+Poly1:
+[1.5 - 1.4x + 2.6x^2 + 3.6x^3 + 3.7x^4 + 5.6x^5 + 2.5x^6 + 1.5x^7]
+
+Value at x = 5
+176572.0
+
+Set coefficient at index 1 from 2.6 to 3.9
+[1.5 + 3.9x + 2.6x^2 + 3.6x^3 + 3.7x^4 + 5.6x^5 + 2.5x^6 + 1.5x^7]
+
+Remove coefficient at index 3:
+[1.5 + 3.9x + 2.6x^2 + 3.7x^3 + 5.6x^4 + 2.5x^5 + 1.5x^6]
+
+Derivative:
+[3.9 + 5.2x + 11.100000000000001x^2 + 22.4x^3 + 12.5x^4 + 9.0x^5]
+
+Poly2:
+[1.5 + 2.6x + 3.7x^2 + 4.5x^3]
+
+Value at x = 3
+164.1
+
+Set coefficient at index 2 from 3.7 to 3.9
+[1.5 + 2.6x + 3.9x^2 + 4.5x^3]
+
+Remove coefficient at index 1:
+[1.5 + 3.9x + 4.5x^2]
+
+Derivative:
+[3.9 + 9.0x]
+
+Multiply:
+[2.25 + 11.7x + 25.86x^2 + 33.24x^3 + 34.53x^4 + 42.24x^5 + 37.2x^6 + 17.1x^7 + 6.75x^8]
+
+Sum:
+[3.75 + 15.6x + 30.36x^2 + 33.24x^3 + 34.53x^4 + 42.24x^5 + 37.2x^6 + 17.1x^7 + 6.75x^8]
+
+Minus:
+[2.25 + 11.7x + 25.86x^2 + 33.24x^3 + 34.53x^4 + 42.24x^5 + 37.2x^6 + 17.1x^7 + 6.75x^8]
+
+
+
+Original polynomial:
+[1.0 + 3.0x + 2.0x^2 + 1.0x^3]
+
+Find root on interval [-5,5]:
+
+Using Bisection method:
+Root is: -0.4302215576171875
+
+Using Secant method:
+Root is: -0.4301597184499826
+
+Using Newton-Raphson method:
+Root is: -0.43015970898303546

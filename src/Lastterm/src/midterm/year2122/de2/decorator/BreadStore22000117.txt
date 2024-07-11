@@ -1,0 +1,180 @@
+Bread will be added into store description: Thick crust bread, with tomato sauce, Cheese
+
+Before add to store:
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+
+After add to store:
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese
+
+
+Bread will be sold from store description: Thick crust bread, with tomato sauce, Cheese, Olives
+
+Before sell:
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese
+
+After sell:
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Cheese
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Cheese
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thin crust bread, with tomato sauce, Cheese, Olives
+Thick crust bread, with tomato sauce, Cheese
+
+
+Print breads by increasing price with cost:
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Cheese, Olives 23.0
+Thin crust bread, with tomato sauce, Cheese, Olives 23.0
+Thin crust bread, with tomato sauce, Cheese, Olives 23.0
+Thin crust bread, with tomato sauce, Cheese, Olives 23.0
+Thin crust bread, with tomato sauce, Cheese, Olives 23.0
+Thick crust bread, with tomato sauce, Cheese 31.0
+Thick crust bread, with tomato sauce, Cheese 31.0
+Thick crust bread, with tomato sauce, Cheese 31.0
+Thick crust bread, with tomato sauce, Cheese 31.0
+Thick crust bread, with tomato sauce, Cheese 31.0
+Thick crust bread, with tomato sauce, Cheese 31.0
+Thick crust bread, with tomato sauce, Olives 32.0
+Thick crust bread, with tomato sauce, Olives 32.0
+Thick crust bread, with tomato sauce, Olives 32.0
+Thick crust bread, with tomato sauce, Olives 32.0
+Thick crust bread, with tomato sauce, Olives 32.0
+Thick crust bread, with tomato sauce, Cheese, Olives 33.0
+Thick crust bread, with tomato sauce, Cheese, Olives 33.0
+Thick crust bread, with tomato sauce, Cheese, Olives 33.0
+Thick crust bread, with tomato sauce, Cheese, Olives 33.0
+
+
+Print top 10 cheapest bread from store:
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Cheese 21.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Olives 22.0
+Thin crust bread, with tomato sauce, Olives 22.0

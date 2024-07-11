@@ -1,0 +1,17 @@
+Function: x * sin(x) - 3
+Close interval: [12,14]
+
+Using Bisection method:
+Tolerance: 0.0001
+Max iterations: 10000
+The root is: 12.802894592285156
+
+Using Secant method:
+Tolerance: 0.0001
+Max iterations: 10000
+The root is: 12.80289177084182
+
+Using Newton-Raphson method:
+Tolerance: 0.0001
+Max iterations: 10000
+The root is: 12.802891769168788

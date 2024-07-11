@@ -1,0 +1,4 @@
+package hus.oop.lab11.observer.quest1;
+
+public class Subscriber {
+}

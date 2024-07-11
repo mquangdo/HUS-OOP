@@ -1,0 +1,92 @@
+Test ArrayPolynomial:
+
+Poly1:
+[1.5 - 1.4x + 2.6x^2 + 3.6x^3 + 3.7x^4 + 5.6x^5 + 2.5x^6 + 1.5x^7]
+
+Value at x = 5:
+176572.0
+
+Set coefficient at index 1 from 2.6 to 3.9
+[1.5 + 3.9x + 2.6x^2 + 3.6x^3 + 3.7x^4 + 5.6x^5 + 2.5x^6 + 1.5x^7]
+
+Remove coefficient at index 3:
+[1.5 + 3.9x + 2.6x^2 + 3.7x^3 + 5.6x^4 + 2.5x^5 + 1.5x^6]
+
+Derivative:
+[3.9 + 5.2x + 11.100000000000001x^2 + 22.4x^3 + 12.5x^4 + 9.0x^5]
+
+Poly2:
+[1.5 + 2.6x + 3.7x^2 + 4.5x^3]
+
+Value at x = 3:
+164.1
+
+Set coefficient at index 2 from 3.7 to 3.9
+[1.5 + 2.6x + 3.9x^2 + 4.5x^3]
+
+Remove coefficient at index 1:
+[1.5 + 3.9x + 4.5x^2]
+
+Derivative:
+[3.9 + 9.0x]
+
+Multiply:
+[15.209999999999999 + 55.38x + 90.09x^2 + 187.26x^3 + 250.35x^4 + 147.6x^5 + 81.0x^6]
+
+Sum:
+[19.11 + 64.38x + 90.09x^2 + 187.26x^3 + 250.35x^4 + 147.6x^5 + 81.0x^6]
+
+Minus:
+[15.209999999999999 + 55.379999999999995x + 90.09x^2 + 187.26x^3 + 250.35x^4 + 147.6x^5 + 81.0x^6]
+
+
+Test ListPolynomial:
+
+Poly1:
+[1.5 - 1.4x + 2.6x^2 + 3.6x^3 + 3.7x^4 + 5.6x^5 + 2.5x^6 + 1.5x^7]
+
+Value at x = 5
+176572.0
+
+Set coefficient at index 1 from 2.6 to 3.9
+[1.5 + 3.9x + 2.6x^2 + 3.6x^3 + 3.7x^4 + 5.6x^5 + 2.5x^6 + 1.5x^7]
+
+Remove coefficient at index 3:
+[1.5 + 3.9x + 2.6x^2 + 3.7x^3 + 5.6x^4 + 2.5x^5 + 1.5x^6]
+
+Derivative:
+[3.9 + 5.2x + 11.100000000000001x^2 + 22.4x^3 + 12.5x^4 + 9.0x^5]
+
+Poly2:
+[1.5 + 2.6x + 3.7x^2 + 4.5x^3]
+
+Value at x = 3
+164.1
+
+Set coefficient at index 2 from 3.7 to 3.9
+[1.5 + 2.6x + 3.9x^2 + 4.5x^3]
+
+Remove coefficient at index 1:
+[1.5 + 3.9x + 4.5x^2]
+
+Derivative:
+[3.9 + 9.0x]
+
+Multiply:
+[15.209999999999999 + 55.38x + 90.09x^2 + 187.26x^3 + 250.35x^4 + 147.6x^5 + 81.0x^6]
+
+Sum:
+[19.11 + 64.38x + 90.09x^2 + 187.26x^3 + 250.35x^4 + 147.6x^5 + 81.0x^6]
+
+Minus:
+[15.209999999999999 + 55.379999999999995x + 90.09x^2 + 187.26x^3 + 250.35x^4 + 147.6x^5 + 81.0x^6]
+
+
+Polynomial:
+[1.9 - 2.6x + 3.9x^2 - 6.7x^3 + 8.5x^4]
+
+TrapezoidRule: 269.92501152708365
+
+MidpointRule: 269.92499423645853
+
+SimpsonRule: 269.9250000000007

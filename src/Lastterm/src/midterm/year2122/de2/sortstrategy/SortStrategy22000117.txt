@@ -1,0 +1,23 @@
+Original array:
+[5 7 2 1 0 0 9 6 0 8]
+
+Using Bubble Sort Algorithm:
+Before sorting:
+[5 7 2 1 0 0 9 6 0 8]
+After sorting:
+[0 0 0 1 2 5 6 7 8 9]
+Number of swap: 22
+
+Using Selection Sort Algorithm:
+Before sorting:
+[5 7 2 1 0 0 9 6 0 8]
+After sorting:
+[0 0 0 1 2 5 6 7 8 9]
+Number of swap: 9
+
+Using Insertion Sort Algorithm:
+Before sorting:
+[5 7 2 1 0 0 9 6 0 8]
+After sorting:
+[0 0 0 1 2 5 6 7 8 9]
+Number of swap: 22

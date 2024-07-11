@@ -1,0 +1,82 @@
+TEST ARRAY VECTOR:
+
+Vector1: [12.5, 14.9, 87.4, 55.8]
+
+Vector2: [2.0, 4.0, 5.0, 6.0]
+
+Length of vector1: 4
+
+Length of vector2: 4
+
+Vector1 append 5.6:
+[12.5, 14.9, 87.4, 55.8, 5.6]
+
+Vector2 append 7.8
+[2.0, 4.0, 5.0, 6.0, 7.8]
+
+Vector1 insert 2.0 at index 1:
+[12.5, 2.0, 14.9, 87.4, 55.8, 5.6]
+
+Vector1 remove index 4:
+
+Vector2 insert 4.5 at index 0:
+[4.5, 2.0, 4.0, 5.0, 6.0, 7.8]
+
+Vector2 remove index 4:
+[4.5, 2.0, 4.0, 5.0, 7.8]
+
+Magnitude of vector1: 89.73505446591093
+
+Distance from vector1 to vector2: 83.53089248894688
+Minus vector1 with vector2:
+[8.0, 0.0, 10.9, 82.4, -2.2]
+
+Plus vector1 with vector2:
+[17.0, 4.0, 18.9, 92.4, 13.399999999999999]
+
+Scale vector1 by 3:
+[12.5, 2.0, 14.9, 87.4, 5.6]
+
+Dot vector1 with vector2: 600.53
+
+
+TEST LIST VECTOR:
+
+Vector1: [12.5, 14.9, 87.4, 55.8]
+
+Vector2: [2.0, 4.0, 5.0, 6.0]
+
+Length of vector1: 4
+
+Length of vector2: 4
+
+Vector1 append 5.6:
+[12.5, 14.9, 87.4, 55.8, 5.6]
+
+Vector2 append 7.8
+[2.0, 4.0, 5.0, 6.0, 7.8]
+
+Vector1 insert 2.0 at index 1:
+[12.5, 2.0, 14.9, 87.4, 55.8, 5.6]
+
+Vector1 remove index 4:
+
+Vector2 insert 4.5 at index 0:
+[4.5, 2.0, 4.0, 5.0, 6.0, 7.8]
+
+Vector2 remove index 4:
+[4.5, 2.0, 4.0, 5.0, 7.8]
+
+Magnitude of vector1: 89.73505446591093
+
+Distance from vector1 to vector2: 83.53089248894688
+Minus vector1 with vector2:
+[8.0, 0.0, 10.9, 82.4, -2.2]
+
+Plus vector1 with vector2:
+[17.0, 4.0, 18.9, 92.4, 13.399999999999999]
+
+Scale vector1 by 3:
+[12.5, 2.0, 14.9, 87.4, 5.6]
+
+Dot vector1 with vector2: 600.53

@@ -1,0 +1,99 @@
+TEST ARRAYLIST BOOK:
+
+Test sort increasing by title:
+Book{title='Book000', year=898, pages=162}
+Book{title='Book0011', year=1156, pages=131}
+Book{title='Book0012', year=346, pages=166}
+Book{title='Book0015', year=1690, pages=153}
+Book{title='Book0018', year=1478, pages=177}
+Book{title='Book0018', year=231, pages=191}
+Book{title='Book0019', year=280, pages=171}
+Book{title='Book002', year=1032, pages=185}
+Book{title='Book006', year=1540, pages=127}
+Book{title='Book009', year=581, pages=193}
+
+Test sort decreasing by title:"
+Book{title='Book009', year=581, pages=193}
+Book{title='Book006', year=1540, pages=127}
+Book{title='Book002', year=1032, pages=185}
+Book{title='Book0019', year=280, pages=171}
+Book{title='Book0018', year=231, pages=191}
+Book{title='Book0018', year=1478, pages=177}
+Book{title='Book0015', year=1690, pages=153}
+Book{title='Book0012', year=346, pages=166}
+Book{title='Book0011', year=1156, pages=131}
+Book{title='Book000', year=898, pages=162}
+
+Test sort increasing by page:
+Book{title='Book006', year=1540, pages=127}
+Book{title='Book0011', year=1156, pages=131}
+Book{title='Book0015', year=1690, pages=153}
+Book{title='Book000', year=898, pages=162}
+Book{title='Book0012', year=346, pages=166}
+Book{title='Book0019', year=280, pages=171}
+Book{title='Book0018', year=1478, pages=177}
+Book{title='Book002', year=1032, pages=185}
+Book{title='Book0018', year=231, pages=191}
+Book{title='Book009', year=581, pages=193}
+
+Test sort decreasing by page:
+Book{title='Book009', year=581, pages=193}
+Book{title='Book0018', year=231, pages=191}
+Book{title='Book002', year=1032, pages=185}
+Book{title='Book0018', year=1478, pages=177}
+Book{title='Book0019', year=280, pages=171}
+Book{title='Book0012', year=346, pages=166}
+Book{title='Book000', year=898, pages=162}
+Book{title='Book0015', year=1690, pages=153}
+Book{title='Book0011', year=1156, pages=131}
+Book{title='Book006', year=1540, pages=127}
+
+TEST LINKEDLIST BOOK:
+
+Test sort increasing by title:
+Book{title='Book0012', year=1539, pages=138}
+Book{title='Book0012', year=649, pages=186}
+Book{title='Book0013', year=1847, pages=134}
+Book{title='Book0014', year=767, pages=155}
+Book{title='Book0018', year=298, pages=114}
+Book{title='Book0021', year=1948, pages=179}
+Book{title='Book0022', year=261, pages=194}
+Book{title='Book0022', year=223, pages=102}
+Book{title='Book0023', year=1666, pages=167}
+Book{title='Book0023', year=1709, pages=189}
+
+Test sort decreasing by title:"
+Book{title='Book0023', year=1709, pages=189}
+Book{title='Book0023', year=1666, pages=167}
+Book{title='Book0022', year=223, pages=102}
+Book{title='Book0022', year=261, pages=194}
+Book{title='Book0021', year=1948, pages=179}
+Book{title='Book0018', year=298, pages=114}
+Book{title='Book0014', year=767, pages=155}
+Book{title='Book0013', year=1847, pages=134}
+Book{title='Book0012', year=1539, pages=138}
+Book{title='Book0012', year=649, pages=186}
+
+Test sort increasing by page:
+Book{title='Book0022', year=223, pages=102}
+Book{title='Book0018', year=298, pages=114}
+Book{title='Book0013', year=1847, pages=134}
+Book{title='Book0012', year=1539, pages=138}
+Book{title='Book0014', year=767, pages=155}
+Book{title='Book0023', year=1666, pages=167}
+Book{title='Book0021', year=1948, pages=179}
+Book{title='Book0012', year=649, pages=186}
+Book{title='Book0023', year=1709, pages=189}
+Book{title='Book0022', year=261, pages=194}
+
+Test sort decreasing by page:
+Book{title='Book0022', year=261, pages=194}
+Book{title='Book0023', year=1709, pages=189}
+Book{title='Book0012', year=649, pages=186}
+Book{title='Book0021', year=1948, pages=179}
+Book{title='Book0023', year=1666, pages=167}
+Book{title='Book0014', year=767, pages=155}
+Book{title='Book0012', year=1539, pages=138}
+Book{title='Book0013', year=1847, pages=134}
+Book{title='Book0018', year=298, pages=114}
+Book{title='Book0022', year=223, pages=102}
