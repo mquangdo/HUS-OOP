@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Counting/Counting.iml" filepath="$PROJECT_DIR$/Counting/Counting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DSA/DSA.iml" filepath="$PROJECT_DIR$/DSA/DSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JavaDSA.iml" filepath="$PROJECT_DIR$/.idea/JavaDSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LinkedList/LinkedList.iml" filepath="$PROJECT_DIR$/LinkedList/LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyDSA/MyDSA.iml" filepath="$PROJECT_DIR$/MyDSA/MyDSA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NumericalMethod/NumericalMethod.iml" filepath="$PROJECT_DIR$/NumericalMethod/NumericalMethod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sorting/Sorting.iml" filepath="$PROJECT_DIR$/Sorting/Sorting.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TwoPointer/TwoPointer.iml" filepath="$PROJECT_DIR$/TwoPointer/TwoPointer.iml" />
+    </modules>
+  </component>
+</project>
